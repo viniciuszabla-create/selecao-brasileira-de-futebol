@@ -4,43 +4,89 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Seleção Brasileira</title>
+
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
+
 body{
 font-family:Arial,sans-serif;
-background:#063b25;color:white;text-align:center
+background:#063b25;
+color:white;
+text-align:center;
 }
+
 header{
 height:100vh;
-display:flex;align-items:center;justify-content:center;
+display:flex;
+align-items:center;
+justify-content:center;
 background:linear-gradient(#006b3ccc,#00351dcc),
-url("https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1600&q=80") center/cover
+url("https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1600&q=80")
+center/cover;
 }
-h1{font-size:clamp(45px,8vw,80px);color:#ffdf00}
-p{font-size:20px;margin:20px}
-button{
-padding:14px 28px;border:0;border-radius:25px;
-background:#ffdf00;color:#063b25;
-font-weight:bold;font-size:16px
+
+h1{
+font-size:clamp(45px,8vw,80px);
+color:#ffdf00;
 }
-section{padding:60px 20px}
-h2{color:#ffdf00;font-size:35px;margin-bottom:25px}
+
+p{
+font-size:20px;
+margin:20px;
+}
+
+section{
+padding:60px 20px;
+}
+
+h2{
+color:#ffdf00;
+font-size:35px;
+margin-bottom:25px;
+}
+
 .card{
-display:inline-block;background:#0a5132;
-padding:25px;margin:10px;
-border-radius:15px;width:200px
+display:inline-block;
+background:#0a5132;
+padding:25px;
+margin:10px;
+border-radius:15px;
+width:220px;
 }
-.card div{font-size:50px;margin-bottom:10px}
-footer{padding:25px;background:#032016;color:#aaa}
+
+.card div{
+font-size:50px;
+margin-bottom:10px;
+}
+
+button{
+border:0;
+background:#ffdf00;
+padding:10px 15px;
+border-radius:20px;
+margin:5px;
+cursor:pointer;
+font-size:16px;
+}
+
+button:hover{
+transform:scale(1.08);
+}
+
+footer{
+padding:25px;
+background:#032016;
+color:#aaa;
+}
 </style>
 </head>
 
 <body>
+
 <header>
 <div>
 <h1>🇧🇷 BRASIL</h1>
 <p>Seleção Brasileira de Futebol</p>
-<button>VAMOS, BRASIL!</button>
 </div>
 </header>
 
@@ -51,21 +97,44 @@ footer{padding:25px;background:#032016;color:#aaa}
 <div class="card">
 <div>⚽</div>
 <h3>Futebol</h3>
+<button>❤️ <span>0</span></button>
+<button>👍 <span>0</span></button>
 </div>
 
 <div class="card">
 <div>🏆</div>
 <h3>5 Copas</h3>
+<button>❤️ <span>0</span></button>
+<button>👍 <span>0</span></button>
 </div>
 
 <div class="card">
 <div>🇧🇷</div>
 <h3>Canarinho</h3>
+<button>❤️ <span>0</span></button>
+<button>👍 <span>0</span></button>
 </div>
+
 </section>
 
 <footer>
 Brasil acima de tudo no futebol 💚💛
 </footer>
+
+<script>
+const botoes = document.querySelectorAll("button");
+
+botoes.forEach(function(botao){
+
+botao.addEventListener("click", botaoClicado);
+
+function botaoClicado(){
+let texto = botao.querySelector("span");
+texto.textContent++;
+}
+
+});
+</script>
+
 </body>
 </html>
