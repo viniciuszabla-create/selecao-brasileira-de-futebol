@@ -1,114 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seleção Brasileira de Futebol</title>
+    <title>Meu blog sobre futebol</title>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #222;
+            background-color: #f2f2f2;
         }
 
         header {
-            background: linear-gradient(90deg, #009739, #ffdf00);
-            color: #fff;
-            text-align: center;
-            padding: 30px 20px;
-        }
-
-        header h1 {
-            font-size: 40px;
-            text-shadow: 2px 2px 4px #333;
-        }
-
-        nav {
-            background-color: #002776;
-            padding: 15px;
-            text-align: center;
-        }
-
-        nav a {
+            background-color: #009739;
             color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #ffdf00;
+            text-align: center;
+            padding: 25px;
         }
 
         main {
-            max-width: 1000px;
+            width: 90%;
+            max-width: 900px;
             margin: 30px auto;
-            padding: 0 20px;
         }
 
-        section {
+        article {
+            display: flex;
+            gap: 25px;
             background-color: white;
+            padding: 20px;
             margin-bottom: 25px;
-            padding: 25px;
             border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px #ccc;
+        }
+
+        article img {
+            width: 250px;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        article div {
+            flex: 1;
         }
 
         h2 {
             color: #009739;
-            margin-bottom: 15px;
         }
 
-        p {
-            line-height: 1.6;
+        .artigo-autor {
+            color: #666;
+            font-size: 14px;
         }
 
-        .titulos {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .titulo {
-            background-color: #009739;
-            color: white;
-            padding: 20px;
+        button {
+            border: none;
+            background-color: #eeeeee;
+            padding: 10px 15px;
+            margin-right: 8px;
             border-radius: 8px;
-            flex: 1;
-            min-width: 150px;
-            text-align: center;
+            cursor: pointer;
+            font-size: 16px;
         }
 
-        .titulo strong {
-            display: block;
-            font-size: 28px;
-            color: #ffdf00;
-        }
-
-        ul {
-            margin-left: 20px;
-            line-height: 2;
+        button:hover {
+            background-color: #dddddd;
         }
 
         footer {
+            text-align: center;
             background-color: #002776;
             color: white;
-            text-align: center;
             padding: 20px;
-            margin-top: 30px;
-        }
-
-        .destaque {
-            color: #009739;
-            font-weight: bold;
         }
     </style>
 </head>
@@ -116,88 +82,103 @@
 <body>
 
     <header>
-        <h1>🇧🇷 Seleção Brasileira de Futebol</h1>
-        <p>O país do futebol</p>
+        <h1>Meu Blog da Seleção Brasileira</h1>
+        <p>Notícias, curiosidades e histórias sobre a Seleção Brasileira de Futebol</p>
     </header>
-
-    <nav>
-        <a href="#historia">História</a>
-        <a href="#titulos">Títulos</a>
-        <a href="#jogadores">Jogadores</a>
-    </nav>
 
     <main>
 
-        <section id="historia">
-            <h2>História</h2>
+        <article>
+            <img src="imagem-brasil.jpg"
+                alt="Seleção Brasileira de Futebol em campo">
 
-            <p>
-                A <span class="destaque">Seleção Brasileira</span> é uma das equipes
-                mais tradicionais e vitoriosas do futebol mundial. Representando o
-                Brasil em competições internacionais, a seleção é conhecida
-                mundialmente pelo seu estilo de jogo e pela grande quantidade de
-                craques que já vestiram a camisa amarela.
-            </p>
+            <div>
+                <h2>A história da Seleção Brasileira</h2>
 
-            <p>
-                Ao longo de sua história, o Brasil conquistou importantes títulos e
-                revelou grandes jogadores, tornando-se uma das maiores potências do
-                futebol internacional.
-            </p>
-        </section>
+                <p class="artigo-autor">Por: Marcelo Paludetto</p>
 
-        <section id="titulos">
-            <h2>Conquistas</h2>
+                <p>
+                    A Seleção Brasileira é uma das equipes mais tradicionais
+                    do futebol mundial. O Brasil conquistou cinco Copas do
+                    Mundo e ficou conhecido pelo seu futebol ofensivo e
+                    pelos grandes jogadores que fizeram história.
+                </p>
 
-            <div class="titulos">
-
-                <div class="titulo">
-                    <strong>5</strong>
-                    Copas do Mundo
-                </div>
-
-                <div class="titulo">
-                    <strong>9</strong>
-                    Copas América
-                </div>
-
-                <div class="titulo">
-                    <strong>4</strong>
-                    Copas das Confederações
-                </div>
-
+                <button>❤️ <span>0</span></button>
+                <button>👍 <span>0</span></button>
             </div>
-        </section>
+        </article>
 
-        <section id="jogadores">
-            <h2>Grandes Jogadores</h2>
+        <article>
+            <img src="imagem-brasil.jpg"
+                alt="Jogadores da Seleção Brasileira de Futebol">
 
-            <ul>
-                <li>Pelé</li>
-                <li>Garrincha</li>
-                <li>Ronaldo Fenômeno</li>
-                <li>Ronaldinho Gaúcho</li>
-                <li>Romário</li>
-                <li>Kaká</li>
-                <li>Neymar</li>
-            </ul>
-        </section>
+            <div>
+                <h2>Os grandes jogadores do Brasil</h2>
 
-        <section>
-            <h2>O Brasil no futebol</h2>
+                <p class="artigo-autor">Por: Marcelo Paludetto</p>
 
-            <p>
-                A camisa verde e amarela é reconhecida em todo o mundo. A paixão
-                dos brasileiros pelo futebol faz da Seleção uma das equipes
-                esportivas mais populares do planeta.
-            </p>
-        </section>
+                <p>
+                    Ao longo dos anos, grandes craques vestiram a camisa
+                    da Seleção Brasileira. Pelé, Garrincha, Romário,
+                    Ronaldo, Ronaldinho e muitos outros jogadores marcaram
+                    a história do futebol brasileiro.
+                </p>
+
+                <button>❤️ <span>0</span></button>
+                <button>👍 <span>0</span></button>
+            </div>
+        </article>
+
+        <article>
+            <img src="imagem-brasil.jpg"
+                alt="Camisa amarela da Seleção Brasileira">
+
+            <div>
+                <h2>A camisa amarela</h2>
+
+                <p class="artigo-autor">Por: Marcelo Paludetto</p>
+
+                <p>
+                    A tradicional camisa amarela da Seleção Brasileira
+                    se tornou um dos símbolos mais conhecidos do futebol.
+                    Ela representa o Brasil e é reconhecida por torcedores
+                    de várias partes do mundo.
+                </p>
+
+                <button>❤️ <span>0</span></button>
+                <button>👍 <span>0</span></button>
+            </div>
+        </article>
 
     </main>
 
     <footer>
-        <p>🇧🇷 Seleção Brasileira de Futebol &copy; 2026</p>
+        <p>Blog sobre a Seleção Brasileira 🇧🇷⚽</p>
     </footer>
 
+    <script>
+        let botoes = document.querySelectorAll("button");
+
+        botoes.forEach(function (botao) {
+            let curtiu = false;
+
+            botao.addEventListener("click", botaoClicado);
+
+            function botaoClicado() {
+                let texto = botao.querySelector("span");
+
+                if (curtiu === false) {
+                    texto.textContent++;
+                    curtiu = true;
+                } else {
+                    texto.textContent--;
+                    curtiu = false;
+                }
+            }
+        });
+    </script>
+
 </body>
+
 </html>
